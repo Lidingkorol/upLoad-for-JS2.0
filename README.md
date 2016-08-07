@@ -18,7 +18,7 @@ upLoad组件支持IE8以上及firefox，chrome浏览器
 ~~~
 	var uploadData=new upLoad({
 		target:document.getElementById('uploadFile'),
-		address:'http://upfile.233.com/ajaxupload',
+		address:'',
 		method:'post',
 		num:'3',
 		size:'2',
