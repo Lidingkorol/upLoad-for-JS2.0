@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>upload</title>
+		<script src="js/index.js"></script>		
+	</head>
+	<body>
+		<input type="button" id="uploadFile" value="点我上传" >
+	</body>
+	<script>
+	
+	var uploadData=new upLoad({
+		target:document.getElementById('uploadFile'),
+		address:'http://upfile.233.com/ajaxupload',
+		method:'post',
+		num:'3',
+		size:'2',
+		multiple:'multiple',
+		success:function(data){
+			alert(data);
+		},
+		error:function(data){
+			alert('服务器错误，请重试');
+		}
+	})
+</script>
+</html>
